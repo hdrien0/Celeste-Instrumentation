@@ -38,9 +38,9 @@ Download them, and then get the latest version of [dnSpy](https://github.com/dnS
 ### Patching the game
 
 * Go to the location of the file `Celeste.exe` (if you have the Steam version it will be something like `C:\Program Files (x86)\Steam\steamapps\common\Celeste\Celeste.exe`).
-* Make a copy of `Celeste.exe`, for example `Instrumentation.exe`.
+* Make a backup copy of `Celeste.exe`, for example `Celeste.exe.old`.
 * Move the three files you donwloaded earlier here.
-* Open the copy in dnSpy.
+* Open `Celeste.exe` in dnSpy.
 * Using the Assembly Explorer of dnSpy (left menu), navigate to `Celeste > Celeste.exe > Celeste > Celeste`. You should get something like the following image :
 
 ![Assembly Explorer](https://i.imgur.com/MFFFMRp.png)
@@ -54,13 +54,31 @@ Download them, and then get the latest version of [dnSpy](https://github.com/dnS
 
 ## Usage
 
-You can then run `Instrumentation.exe` (or whatever you named it). The game will load normally and then wait for instructions.
+You can then run `Celeste.exe`. The game will load normally and then wait for instructions.
 
 The global configuration of the instrumented game is done with `InstrumentationParameters.xml`. There you can :
 * Change the speed at which the game executes
 * Disable the game graphics
 * Enable the debug rendering mode
 * Disable instrumentation altogether
+
+To use the Python interface :
+
+### Windows
+
+```bash
+python -m venv venv
+venv/Scripts/activate.bat
+pip install CelestePythonInterface
+```
+
+### Linux
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install CelestePythonInterface
+```
 
 ## Dev environment setup
 

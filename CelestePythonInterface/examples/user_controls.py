@@ -14,7 +14,7 @@ def get_inputs(input):
     return [int(x) for x in key_presses]
 
 session_params = SessionParameters()
-session_params.Level = "3"
+session_params.Level = "1"
 session_params.AreaKey = 1
 session_params.AreaMode = 0
 session_params.TimeoutSeconds = 15
