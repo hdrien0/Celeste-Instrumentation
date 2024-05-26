@@ -1,7 +1,7 @@
 # Celeste Instrumentation
 
 This project aims to provide an instrumentation interface for the game Celeste.  
-It was originally created to train AI agents (see Celeste-NEAT).
+It was originally created to train AI agents (see [Celeste-NEAT](https://github.com/hdrien0/Celeste-NEAT)).
 
 ## Description
 
